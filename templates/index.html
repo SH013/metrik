@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<ul>
+{% for u in list %}
+<li><p>id: {{u.id}}</p>
+	<ul>
+	<li>value: {{u.p_value}}</li>
+	<li>p_value: {{u.value}}</li>
+	<li>p_date: {{u.p_date}}</li>
+	<li>date: {{u.date}}</li>
+
+	</ul>
+{% endfor %}
+</ul>
+{% endblock %}

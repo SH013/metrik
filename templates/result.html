@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<ul>
+{% for curr in list %}
+
+<li><p>id: {{curr.id}}</p>
+	<ul>
+	<li>curr: {{curr.curr}}</li>
+	</ul>
+{% endfor %}
+</ul>
+{% endblock %}
